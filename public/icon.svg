@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="hkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="50%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="hkText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with smooth corners -->
+  <rect width="512" height="512" rx="128" fill="url(#hkBg)"/>
+
+  <!-- Subtle Inner Glow / Border -->
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="6"/>
+
+  <!-- Geometric Decorative Elements (Phone Storage Grid Dots) -->
+  <circle cx="256" cy="72" r="5" fill="#38bdf8" opacity="0.8"/>
+  <circle cx="276" cy="72" r="5" fill="#818cf8" opacity="0.6"/>
+  <circle cx="296" cy="72" r="5" fill="#a78bfa" opacity="0.4"/>
+
+  <!-- Distinctive "HK" Bold Monogram -->
+  <g filter="url(#shadow)" fill="url(#hkText)">
+    <!-- Letter H -->
+    <path d="M 120 160 L 176 160 L 176 230 L 232 230 L 232 160 L 288 160 L 288 352 L 232 352 L 232 284 L 176 284 L 176 352 L 120 352 Z" />
+    
+    <!-- Letter K (Offset & Interlocked) -->
+    <path d="M 312 160 L 368 160 L 368 236 L 416 160 L 476 160 L 406 256 L 484 352 L 420 352 L 368 280 L 368 352 L 312 352 Z" />
+  </g>
+
+  <!-- Accent Spark / Broom Star at top of K -->
+  <path d="M 460 110 L 466 126 L 482 132 L 466 138 L 460 154 L 454 138 L 438 132 L 454 126 Z" fill="#38bdf8"/>
+
+  <!-- App Label Pill Base (Subtle) -->
+  <rect x="156" y="388" width="200" height="36" rx="18" fill="rgba(255,255,255,0.12)"/>
+  <text x="256" y="412" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#cbd5e1" letter-spacing="3" text-anchor="middle">HOUSEKEEP</text>
+</svg>

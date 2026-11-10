@@ -1,0 +1,6 @@
+{
+  "name": "HousekeepOS - Phone Storage & DCIM Manager",
+  "description": "Automated weekly phone storage housekeeping. Organizes DCIM photos into structured week and month folders for hard drive backup, detects dormant apps over 30 days for uninstallation, and reports storage gains over 6 months.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
